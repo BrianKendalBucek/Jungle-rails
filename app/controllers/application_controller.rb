@@ -8,7 +8,6 @@ class ApplicationController < ActionController::Base
 
   def authenticate
     http_basic_authenticate_or_request_with name: ENV['ADMIN_USERNAME'], password: ENV['ADMIN_PASSWORD']
-
   end 
 
   def cart
