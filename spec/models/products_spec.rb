@@ -13,7 +13,7 @@ RSpec.describe Product, type: :model do
         quantity: 1,
         category: @category
       )
-    expect(new_product).to be_valid
+      expect(new_product).to be_valid
     end
 
     it "Should return an invalid product - no product name given" do
@@ -24,7 +24,7 @@ RSpec.describe Product, type: :model do
         quantity: 1,
         category: @category
       )
-    expect(new_product).to_not be_valid
+      expect(new_product).to_not be_valid
     end
 
     it "Should return an invalid product - no price given" do
@@ -35,7 +35,7 @@ RSpec.describe Product, type: :model do
         quantity: 1,
         category: @category
       )
-    expect(new_product).to_not be_valid
+      expect(new_product).to_not be_valid
     end
 
     it "Should return an invalid product - no quantity given" do
@@ -46,7 +46,7 @@ RSpec.describe Product, type: :model do
         price_cents: 8000,
         category: @category 
       )
-    expect(new_product).to_not be_valid
+      expect(new_product).to_not be_valid
     end
 
     it "Should return an invalid product - no category" do
@@ -57,7 +57,7 @@ RSpec.describe Product, type: :model do
         price_cents: 7000,
         quantity: 1
       )
-    expect(new_product).to_not be_valid
+      expect(new_product).to_not be_valid
     end
 
   end
